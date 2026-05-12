@@ -3,45 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayed Mo Elyas Sadiq - Resume</title>
+    <title>Resume - Sayed Mo Elyas Sadiq</title>
     <style>
-        :root { --primary: #1b4332; --accent: #2d6a4f; --light: #f8f9fa; }
-        body { font-family: 'Trebuchet MS', sans-serif; background: #e9ecef; margin: 0; padding: 40px 10px; display: flex; justify-content: center; }
-        .wrapper { background: white; width: 850px; display: flex; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.15); }
-        .side { background: var(--primary); color: white; width: 260px; padding: 30px; text-align: center; }
-        .profile { width: 150px; height: 150px; border-radius: 10px; border: 3px solid white; margin-bottom: 20px; object-fit: cover; }
-        .main { padding: 40px; flex-grow: 1; }
-        h2 { color: var(--accent); border-bottom: 1px solid #ccc; }
-        .tag { display: inline-block; background: #d8f3dc; color: #081c15; padding: 5px 10px; border-radius: 3px; margin: 3px; font-size: 0.8em; font-weight: bold; }
+        :root { --main-blue: #003049; --accent-blue: #669bbc; --text-dark: #333; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fdf0d5; margin: 0; padding: 50px 15px; color: var(--text-dark); }
+        .resume-container { background: white; max-width: 850px; margin: auto; border-radius: 15px; display: flex; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        
+        /* Left Accent Bar */
+        .info-panel { background: var(--main-blue); color: white; width: 280px; padding: 40px 25px; }
+        .profile-frame { width: 160px; height: 160px; border-radius: 50%; border: 5px solid var(--accent-blue); margin: 0 auto 25px; display: block; object-fit: cover; }
+        .info-panel h1 { font-size: 1.3em; text-align: center; margin-bottom: 5px; color: #fff; }
+        .info-panel p { font-size: 0.9em; text-align: center; opacity: 0.8; }
+        .contact-box { margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; }
+        .contact-box p { text-align: left; margin: 12px 0; font-size: 0.85em; }
+
+        /* Right Content Area */
+        .content-area { padding: 40px 50px; flex: 1; }
+        h2 { color: var(--main-blue); border-left: 5px solid var(--accent-blue); padding-left: 15px; font-size: 1.2em; text-transform: uppercase; margin-top: 35px; }
+        .skill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-item { background: #eee; padding: 6px 12px; border-radius: 5px; font-size: 0.85em; font-weight: bold; color: var(--main-blue); }
+        .project-block { margin-bottom: 20px; }
+        .project-block strong { color: var(--accent-blue); display: block; margin-bottom: 5px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <aside class="side">
-            <img src="elyas.jpg" alt="Sayed Mo Elyas Sadiq" class="profile">
-            <h3>Sayed Mo Elyas Sadiq</h3>
-            <p>Computer Engineering Undergraduate</p>
-            <div style="text-align: left; font-size: 0.8em; margin-top: 20px;">
-                <p>📍 Karabük, TR</p>
-                <p>📧 elyas.sadiq@example.com</p>
-                <p>🆔 Student ID: 241021XXXX</p>
+    <div class="resume-container">
+        <aside class="info-panel">
+            <img src="elyas.jpg" alt="Sayed Mo Elyas Sadiq" class="profile-frame">
+            <h1>Sayed Mo Elyas Sadiq</h1>
+            <p>Computer Engineering Student</p>
+            
+            <div class="contact-box">
+                <p>📍 Location: Karabük, TR</p>
+                <p>📧 Email: elyassadeq805@gmail.com</p>
+                <p>🆔 Student ID: 2210213534</p>
             </div>
         </aside>
-        <main class="main">
+
+        <main class="content-area">
             <section>
-                <h2>Academic Profile</h2>
-                <p>Currently pursuing a Bachelor of Science in Computer Engineering at <strong>Karabük University</strong>.</p>
+                <h2>Academic Focus</h2>
+                <p>Currently enrolled in the Computer Engineering department at <strong>Karabük University</strong>. Focused on mastering low-level programming and software architecture.</p>
             </section>
+
             <section>
-                <h2>Technical Skills</h2>
-                <div class="tag">C Programming</div> <div class="tag">Java</div> 
-                <div class="tag">PHP</div> <div class="tag">MySQL</div> 
-                <div class="tag">Digital Systems</div> <div class="tag">CSS3</div>
+                <h2>Technical Proficiency</h2>
+                <div class="skill-list">
+                    <div class="skill-item">C Language</div>
+                    <div class="skill-item">Java (OOP)</div>
+                    <div class="skill-item">MySQL Databases</div>
+                    <div class="skill-item">Algorithms</div>
+                    <div class="skill-item">Web Technologies</div>
+                    <div class="skill-item">Hardware Fundamentals</div>
+                </div>
             </section>
+
             <section>
-                <h2>Recent Lab Work</h2>
-                <p><strong>System Authentication:</strong> Created a secure login interface using PHP with SHA256 hashing protocols.</p>
-                <p><strong>Logic Gate Design:</strong> Designed and tested combinational logic circuits using NOR gate configurations.</p>
+                <h2>Engineering Projects</h2>
+                <div class="project-block">
+                    <strong>Library Management System</strong>
+                    <p>Designed a database-driven application using SQL to manage book inventories and student borrowing records.</p>
+                </div>
+                <div class="project-block">
+                    <strong>Sorting Algorithm Analysis</strong>
+                    <p>Implemented and compared the performance of various sorting algorithms in C for optimized data processing.</p>
+                </div>
+                <div class="project-block">
+                    <strong>Responsive UI Design</strong>
+                    <p>Developed a series of landing pages using modern CSS techniques like Flexbox and Grid for Lab assignments.</p>
+                </div>
             </section>
         </main>
     </div>
