@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayed Mo Elyas Sadiq - Resume</title>
+    <style>
+        :root { --primary: #1b4332; --accent: #2d6a4f; --light: #f8f9fa; }
+        body { font-family: 'Trebuchet MS', sans-serif; background: #e9ecef; margin: 0; padding: 40px 10px; display: flex; justify-content: center; }
+        .wrapper { background: white; width: 850px; display: flex; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.15); }
+        .side { background: var(--primary); color: white; width: 260px; padding: 30px; text-align: center; }
+        .profile { width: 150px; height: 150px; border-radius: 10px; border: 3px solid white; margin-bottom: 20px; object-fit: cover; }
+        .main { padding: 40px; flex-grow: 1; }
+        h2 { color: var(--accent); border-bottom: 1px solid #ccc; }
+        .tag { display: inline-block; background: #d8f3dc; color: #081c15; padding: 5px 10px; border-radius: 3px; margin: 3px; font-size: 0.8em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="side">
+            <img src="elyas.jpg" alt="Sayed Mo Elyas Sadiq" class="profile">
+            <h3>Sayed Mo Elyas Sadiq</h3>
+            <p>Computer Engineering Undergraduate</p>
+            <div style="text-align: left; font-size: 0.8em; margin-top: 20px;">
+                <p>📍 Karabük, TR</p>
+                <p>📧 elyas.sadiq@example.com</p>
+                <p>🆔 Student ID: 241021XXXX</p>
+            </div>
+        </aside>
+        <main class="main">
+            <section>
+                <h2>Academic Profile</h2>
+                <p>Currently pursuing a Bachelor of Science in Computer Engineering at <strong>Karabük University</strong>.</p>
+            </section>
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="tag">C Programming</div> <div class="tag">Java</div> 
+                <div class="tag">PHP</div> <div class="tag">MySQL</div> 
+                <div class="tag">Digital Systems</div> <div class="tag">CSS3</div>
+            </section>
+            <section>
+                <h2>Recent Lab Work</h2>
+                <p><strong>System Authentication:</strong> Created a secure login interface using PHP with SHA256 hashing protocols.</p>
+                <p><strong>Logic Gate Design:</strong> Designed and tested combinational logic circuits using NOR gate configurations.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
